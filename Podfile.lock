@@ -1,0 +1,52 @@
+PODS:
+  - AMSMB2 (2.7.1)
+  - Differentiator (4.0.1)
+  - Nimble (9.0.0)
+  - Quick (3.0.0)
+  - ReachabilitySwift (5.0.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+
+DEPENDENCIES:
+  - AMSMB2
+  - Nimble
+  - Quick
+  - ReachabilitySwift
+  - RxCocoa (= 5.0.1)
+  - RxDataSources (~> 4.0)
+  - RxSwift (= 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - AMSMB2
+    - Differentiator
+    - Nimble
+    - Quick
+    - ReachabilitySwift
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  AMSMB2: 4017852863a688970e8c4f38a4fae9826fbbec34
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+
+PODFILE CHECKSUM: 92f88ebe2dbe4bf98877e5eca6a599fe36fc7dcc
+
+COCOAPODS: 1.10.0

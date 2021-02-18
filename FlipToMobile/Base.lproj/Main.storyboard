@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m0o-Xd-mNv">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="aby-0c-r1X">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="cdn-uK-mF9" customClass="MainViewController" customModule="To_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lo4-51-CKe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BEQ-Rb-asn">
+                                <rect key="frame" x="16" y="218" width="218.33333333333334" height="48"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Download  &amp; share the current roll of your Flip!">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_samsungflip_logo_2" translatesAutoresizingMaskIntoConstraints="NO" id="Vjo-fy-UY6">
+                                <rect key="frame" x="16" y="136" width="254" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vjo-fy-UY6" secondAttribute="height" multiplier="608:96" id="Urg-I8-q1p"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xY-mX-vVf">
+                                <rect key="frame" x="335" y="88" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0xY-mX-vVf" secondAttribute="height" multiplier="1:1" id="5Uk-D8-xnz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ic_mobile_info"/>
+                                <connections>
+                                    <action selector="tapAboutApp:" destination="cdn-uK-mF9" eventType="touchUpInside" id="4oJ-NN-gdu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gm-1h-gph">
+                                <rect key="frame" x="16" y="320" width="97" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-7n-WFy" userLabel="Scan QR View">
+                                <rect key="frame" x="16" y="353" width="343" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_scan_qr" translatesAutoresizingMaskIntoConstraints="NO" id="mlp-BW-kaY">
+                                        <rect key="frame" x="16" y="17" width="29" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="mlp-BW-kaY" secondAttribute="height" id="pVa-EL-Bbm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan the QR code to connect automatically." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dee-YA-yc9">
+                                        <rect key="frame" x="16" y="75.333333333333314" width="317" height="18"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan QR Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iop-xB-BFk">
+                                        <rect key="frame" x="16" y="55.000000000000007" width="113" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="Dee-YA-yc9" firstAttribute="leading" secondItem="iop-xB-BFk" secondAttribute="leading" id="6oy-Ff-nNj"/>
+                                    <constraint firstItem="iop-xB-BFk" firstAttribute="top" secondItem="mlp-BW-kaY" secondAttribute="bottom" constant="9" id="8PS-m3-Rg2"/>
+                                    <constraint firstItem="mlp-BW-kaY" firstAttribute="top" secondItem="OPq-7n-WFy" secondAttribute="top" constant="17" id="Fey-lk-BCD"/>
+                                    <constraint firstItem="mlp-BW-kaY" firstAttribute="leading" secondItem="OPq-7n-WFy" secondAttribute="leading" constant="16" id="IIX-dA-awg"/>
+                                    <constraint firstItem="Dee-YA-yc9" firstAttribute="height" secondItem="OPq-7n-WFy" secondAttribute="height" multiplier="0.157895" id="daL-jv-L39"/>
+                                    <constraint firstItem="mlp-BW-kaY" firstAttribute="width" secondItem="OPq-7n-WFy" secondAttribute="width" multiplier="29/343" id="dvA-FC-J3r"/>
+                                    <constraint firstItem="Dee-YA-yc9" firstAttribute="top" secondItem="iop-xB-BFk" secondAttribute="bottom" id="rkw-c2-EXe"/>
+                                    <constraint firstItem="iop-xB-BFk" firstAttribute="leading" secondItem="mlp-BW-kaY" secondAttribute="leading" id="wDu-C7-dSZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dee-YA-yc9" secondAttribute="trailing" constant="10" id="yIb-re-gG4"/>
+                                    <constraint firstItem="iop-xB-BFk" firstAttribute="height" secondItem="OPq-7n-WFy" secondAttribute="height" multiplier="0.178363" id="zxP-aK-Ogg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="LdS-Hu-fpZ" appends="YES" id="29m-aj-1sX"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiT-4b-kAq" userLabel="Connect Manually View">
+                                <rect key="frame" x="16" y="476" width="343" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_connect_manual" translatesAutoresizingMaskIntoConstraints="NO" id="rSn-KY-hfH">
+                                        <rect key="frame" x="16" y="17" width="29" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rSn-KY-hfH" secondAttribute="height" id="yk9-O5-M6Y"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect Manually" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8C-xi-WaP">
+                                        <rect key="frame" x="16" y="55" width="141" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect your mobile to the Flip directly." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7hr-2b-bqP">
+                                        <rect key="frame" x="16" y="76" width="272.66666666666669" height="18"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="7hr-2b-bqP" firstAttribute="top" secondItem="R8C-xi-WaP" secondAttribute="bottom" id="8JA-du-pyq"/>
+                                    <constraint firstItem="rSn-KY-hfH" firstAttribute="top" secondItem="RiT-4b-kAq" secondAttribute="top" constant="17" id="9yc-yS-KLq"/>
+                                    <constraint firstItem="R8C-xi-WaP" firstAttribute="height" secondItem="RiT-4b-kAq" secondAttribute="height" multiplier="0.184211" id="IIt-bu-bvY"/>
+                                    <constraint firstItem="rSn-KY-hfH" firstAttribute="width" secondItem="RiT-4b-kAq" secondAttribute="width" multiplier="29/343" id="M1T-f2-7aL"/>
+                                    <constraint firstItem="R8C-xi-WaP" firstAttribute="leading" secondItem="rSn-KY-hfH" secondAttribute="leading" id="WIQ-Rx-J6r"/>
+                                    <constraint firstItem="7hr-2b-bqP" firstAttribute="leading" secondItem="R8C-xi-WaP" secondAttribute="leading" id="aUK-IN-Ewf"/>
+                                    <constraint firstItem="rSn-KY-hfH" firstAttribute="leading" secondItem="RiT-4b-kAq" secondAttribute="leading" constant="16" id="cgZ-qj-yMC"/>
+                                    <constraint firstItem="R8C-xi-WaP" firstAttribute="top" secondItem="rSn-KY-hfH" secondAttribute="bottom" constant="9" id="dOC-OW-Upy"/>
+                                    <constraint firstItem="7hr-2b-bqP" firstAttribute="height" secondItem="RiT-4b-kAq" secondAttribute="height" multiplier="0.157895" id="vva-1H-Why"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Xfb-xn-T73" appends="YES" id="Nvt-Bh-gzo"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFV-Z1-jLJ">
+                                <rect key="frame" x="16" y="578" width="83" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6j-jR-vp8" userLabel="Downloaded Roll View">
+                                <rect key="frame" x="16" y="619" width="343" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_downloaded" translatesAutoresizingMaskIntoConstraints="NO" id="Qaj-gr-WSg">
+                                        <rect key="frame" x="16" y="17" width="29" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Qaj-gr-WSg" secondAttribute="height" id="bZx-c8-uY2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can view downloaded rolls and share them." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="SgS-dy-7fB">
+                                        <rect key="frame" x="16" y="74.333333333333371" width="324.66666666666669" height="18"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloaded Roll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73F-ur-Av7">
+                                        <rect key="frame" x="15.999999999999993" y="55.000000000000007" width="124.33333333333331" height="19.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="73F-ur-Av7" firstAttribute="height" secondItem="L6j-jR-vp8" secondAttribute="height" multiplier="0.169591" id="3Ff-Fr-pPT"/>
+                                    <constraint firstItem="SgS-dy-7fB" firstAttribute="top" secondItem="73F-ur-Av7" secondAttribute="bottom" id="3p1-AG-j2p"/>
+                                    <constraint firstItem="73F-ur-Av7" firstAttribute="top" secondItem="Qaj-gr-WSg" secondAttribute="bottom" constant="9" id="CMH-h2-5wG"/>
+                                    <constraint firstItem="73F-ur-Av7" firstAttribute="leading" secondItem="Qaj-gr-WSg" secondAttribute="leading" id="CrQ-Ag-92f"/>
+                                    <constraint firstItem="SgS-dy-7fB" firstAttribute="leading" secondItem="73F-ur-Av7" secondAttribute="leading" id="ZMi-FN-X8n"/>
+                                    <constraint firstItem="SgS-dy-7fB" firstAttribute="height" secondItem="L6j-jR-vp8" secondAttribute="height" multiplier="0.157895" id="eAS-b7-GLA"/>
+                                    <constraint firstItem="Qaj-gr-WSg" firstAttribute="leading" secondItem="L6j-jR-vp8" secondAttribute="leading" constant="16" id="iFA-OT-3ey"/>
+                                    <constraint firstItem="Qaj-gr-WSg" firstAttribute="width" secondItem="L6j-jR-vp8" secondAttribute="width" multiplier="29/343" id="k6J-dK-vJo"/>
+                                    <constraint firstItem="Qaj-gr-WSg" firstAttribute="top" secondItem="L6j-jR-vp8" secondAttribute="top" constant="17" id="k8b-lQ-e0H"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Vnz-Hn-LTr" appends="YES" id="lXv-ob-6k4"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="BEQ-Rb-asn" firstAttribute="height" secondItem="lo4-51-CKe" secondAttribute="height" multiplier="0.0591133" id="3Zc-5x-s0q"/>
+                            <constraint firstItem="L6j-jR-vp8" firstAttribute="bottom" secondItem="cWF-Fq-98g" secondAttribute="bottom" constant="-45" id="7FH-Yk-m4b"/>
+                            <constraint firstItem="RiT-4b-kAq" firstAttribute="top" secondItem="OPq-7n-WFy" secondAttribute="bottom" constant="9" id="8cL-7m-ZdU"/>
+                            <constraint firstItem="2gm-1h-gph" firstAttribute="height" secondItem="lo4-51-CKe" secondAttribute="height" multiplier="0.0270936" id="ALD-uo-GGd"/>
+                            <constraint firstItem="OPq-7n-WFy" firstAttribute="top" secondItem="2gm-1h-gph" secondAttribute="bottom" constant="11" id="CPD-eD-U59"/>
+                            <constraint firstItem="Vjo-fy-UY6" firstAttribute="leading" secondItem="cWF-Fq-98g" secondAttribute="leading" constant="16" id="DKW-H2-Kck"/>
+                            <constraint firstItem="rFV-Z1-jLJ" firstAttribute="leading" secondItem="cWF-Fq-98g" secondAttribute="leading" constant="16" id="DXB-gQ-Eq1"/>
+                            <constraint firstItem="OPq-7n-WFy" firstAttribute="centerX" secondItem="cWF-Fq-98g" secondAttribute="centerX" id="G0U-lE-WL4"/>
+                            <constraint firstItem="cWF-Fq-98g" firstAttribute="trailing" secondItem="0xY-mX-vVf" secondAttribute="trailing" constant="14" id="Hzh-Ks-rCd"/>
+                            <constraint firstItem="OPq-7n-WFy" firstAttribute="width" secondItem="lo4-51-CKe" secondAttribute="width" multiplier="343/375" id="JH2-B0-itQ"/>
+                            <constraint firstItem="0xY-mX-vVf" firstAttribute="top" secondItem="cWF-Fq-98g" secondAttribute="top" id="Let-UI-HGZ"/>
+                            <constraint firstItem="BEQ-Rb-asn" firstAttribute="leading" secondItem="Vjo-fy-UY6" secondAttribute="leading" id="Ovg-rs-6tp"/>
+                            <constraint firstItem="L6j-jR-vp8" firstAttribute="top" secondItem="rFV-Z1-jLJ" secondAttribute="bottom" constant="11" id="SdF-Dk-AeQ"/>
+                            <constraint firstItem="L6j-jR-vp8" firstAttribute="width" secondItem="lo4-51-CKe" secondAttribute="width" multiplier="343/375" id="W30-pm-lD5"/>
+                            <constraint firstItem="2gm-1h-gph" firstAttribute="top" secondItem="BEQ-Rb-asn" secondAttribute="bottom" constant="54" id="Z8A-ec-Fdc"/>
+                            <constraint firstItem="Vjo-fy-UY6" firstAttribute="top" secondItem="cWF-Fq-98g" secondAttribute="top" constant="48" id="dAm-eu-Z74"/>
+                            <constraint firstItem="L6j-jR-vp8" firstAttribute="centerX" secondItem="cWF-Fq-98g" secondAttribute="centerX" id="f9e-C6-pX9"/>
+                            <constraint firstItem="RiT-4b-kAq" firstAttribute="height" secondItem="lo4-51-CKe" secondAttribute="height" multiplier="114/812" id="g5J-z7-3jh"/>
+                            <constraint firstItem="OPq-7n-WFy" firstAttribute="height" secondItem="lo4-51-CKe" secondAttribute="height" multiplier="114/812" id="gYA-kD-1QI"/>
+                            <constraint firstItem="L6j-jR-vp8" firstAttribute="height" secondItem="lo4-51-CKe" secondAttribute="height" multiplier="114/812" id="gaJ-JN-meP"/>
+                            <constraint firstItem="RiT-4b-kAq" firstAttribute="width" secondItem="lo4-51-CKe" secondAttribute="width" multiplier="343/375" id="hb1-vK-Rja"/>
+                            <constraint firstItem="2gm-1h-gph" firstAttribute="leading" secondItem="cWF-Fq-98g" secondAttribute="leading" constant="16" id="k4O-Nj-CtU"/>
+                            <constraint firstItem="Vjo-fy-UY6" firstAttribute="width" secondItem="lo4-51-CKe" secondAttribute="width" multiplier="0.677333" id="kO9-Tg-hEY"/>
+                            <constraint firstItem="RiT-4b-kAq" firstAttribute="centerX" secondItem="cWF-Fq-98g" secondAttribute="centerX" id="q2z-Pf-5my"/>
+                            <constraint firstItem="BEQ-Rb-asn" firstAttribute="top" secondItem="Vjo-fy-UY6" secondAttribute="bottom" constant="42" id="qN6-T7-iCg"/>
+                            <constraint firstItem="0xY-mX-vVf" firstAttribute="height" secondItem="lo4-51-CKe" secondAttribute="height" multiplier="0.0320197" id="xtJ-Sp-fxN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cWF-Fq-98g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3d9-5N-Bbe"/>
+                    <connections>
+                        <outlet property="connectManualImage" destination="rSn-KY-hfH" id="eHd-QP-BBy"/>
+                        <outlet property="connectManualView" destination="RiT-4b-kAq" id="XUs-5Y-VUZ"/>
+                        <outlet property="downloadedRollImage" destination="Qaj-gr-WSg" id="iNN-lI-xW5"/>
+                        <outlet property="downloadedView" destination="L6j-jR-vp8" id="7jp-Bt-Vnl"/>
+                        <outlet property="logoImage" destination="Vjo-fy-UY6" id="GGp-L9-QRE"/>
+                        <outlet property="scanQRImage" destination="mlp-BW-kaY" id="5lT-Dy-Bb4"/>
+                        <outlet property="scanQRView" destination="OPq-7n-WFy" id="KmN-si-cX4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8U-Zz-hSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LdS-Hu-fpZ" userLabel="Tap Scan QR">
+                    <connections>
+                        <action selector="tapScanQR:" destination="cdn-uK-mF9" id="wj4-FF-GgL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Xfb-xn-T73" userLabel="Tap Manually">
+                    <connections>
+                        <action selector="tapManually:" destination="cdn-uK-mF9" id="FeS-Zc-Zmp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Vnz-Hn-LTr" userLabel="Tap Downloaded">
+                    <connections>
+                        <action selector="tapDownloaded:" destination="cdn-uK-mF9" id="q6U-Tq-8EQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-669.60000000000002" y="578.57142857142856"/>
+        </scene>
+        <!--ScanQR Code View Controller-->
+        <scene sceneID="XjO-WM-mtA">
+            <objects>
+                <viewController storyboardIdentifier="ScanQRCodeViewController" id="2bq-9Q-6i3" customClass="ScanQRCodeViewController" customModule="To_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NvN-mp-Fwr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If a code is detected, the Filp will be connected automatically" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jN8-ts-jy6">
+                                <rect key="frame" x="16" y="636.33333333333337" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.25490196078431371" green="0.59215686274509804" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Align the QR code within the frame to scan." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nX-TB-C5I">
+                                <rect key="frame" x="16" y="79" width="331" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59G-cd-w5l">
+                                <rect key="frame" x="16" y="134.33333333333337" width="343" height="467"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oin-sG-z7U">
+                                        <rect key="frame" x="39" y="121.99999999999997" width="265" height="265"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oin-sG-z7U" secondAttribute="height" id="rhA-hQ-zQP"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can view the QR code on your Flip by selecting Mobile in Export." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvr-nh-93g">
+                                        <rect key="frame" x="0.0" y="30" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="oin-sG-z7U" firstAttribute="height" secondItem="59G-cd-w5l" secondAttribute="height" multiplier="0.567452" id="4pb-YH-Emc"/>
+                                    <constraint firstItem="oin-sG-z7U" firstAttribute="centerX" secondItem="59G-cd-w5l" secondAttribute="centerX" id="JVG-Ka-i2w"/>
+                                    <constraint firstItem="mvr-nh-93g" firstAttribute="top" secondItem="59G-cd-w5l" secondAttribute="top" constant="30" id="Zy0-qK-k3t"/>
+                                    <constraint firstItem="oin-sG-z7U" firstAttribute="width" secondItem="59G-cd-w5l" secondAttribute="width" multiplier="0.772595" id="bcL-rL-9zR"/>
+                                    <constraint firstItem="mvr-nh-93g" firstAttribute="width" secondItem="59G-cd-w5l" secondAttribute="width" id="m3B-2z-Zxg"/>
+                                    <constraint firstItem="mvr-nh-93g" firstAttribute="centerX" secondItem="59G-cd-w5l" secondAttribute="centerX" id="n9q-Df-fOV"/>
+                                    <constraint firstItem="oin-sG-z7U" firstAttribute="top" secondItem="mvr-nh-93g" secondAttribute="bottom" constant="56" id="qut-8I-xhO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94116300340000003" green="0.93324798350000004" blue="0.93725651499999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="59G-cd-w5l" firstAttribute="width" secondItem="NvN-mp-Fwr" secondAttribute="width" multiplier="0.914667" id="3rr-Jr-LKa"/>
+                            <constraint firstItem="cuO-od-2JJ" firstAttribute="trailing" secondItem="jN8-ts-jy6" secondAttribute="trailing" constant="16" id="D3I-kw-NuS"/>
+                            <constraint firstItem="59G-cd-w5l" firstAttribute="centerX" secondItem="cuO-od-2JJ" secondAttribute="centerX" id="Hmu-20-7UH"/>
+                            <constraint firstItem="59G-cd-w5l" firstAttribute="top" secondItem="4nX-TB-C5I" secondAttribute="bottom" constant="35" id="JI7-4b-twY"/>
+                            <constraint firstItem="59G-cd-w5l" firstAttribute="height" secondItem="NvN-mp-Fwr" secondAttribute="height" multiplier="0.575123" id="KXP-En-LEB"/>
+                            <constraint firstItem="4nX-TB-C5I" firstAttribute="top" secondItem="cuO-od-2JJ" secondAttribute="top" constant="35" id="Mv5-PZ-I4g"/>
+                            <constraint firstItem="jN8-ts-jy6" firstAttribute="top" secondItem="59G-cd-w5l" secondAttribute="bottom" constant="35" id="Tb2-F4-eNt"/>
+                            <constraint firstItem="4nX-TB-C5I" firstAttribute="leading" secondItem="cuO-od-2JJ" secondAttribute="leading" constant="16" id="i64-qr-voZ"/>
+                            <constraint firstItem="jN8-ts-jy6" firstAttribute="leading" secondItem="cuO-od-2JJ" secondAttribute="leading" constant="16" id="wfh-Ui-31Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cuO-od-2JJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="59G-cd-w5l" id="dlz-TM-umU"/>
+                        <outlet property="scanningView" destination="oin-sG-z7U" id="K6a-T4-f2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcj-Rw-v3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="579"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xPd-cu-m9z">
+            <objects>
+                <navigationController storyboardIdentifier="navigationcontroller" automaticallyAdjustsScrollViewInsets="NO" id="m0o-Xd-mNv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pjO-XJ-0rW">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cdn-uK-mF9" kind="relationship" relationship="rootViewController" id="Tb5-NC-JCF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Os-N0-hJR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1578.2608695652175" y="578.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_connect_manual" width="96" height="96"/>
+        <image name="ic_downloaded" width="96" height="96"/>
+        <image name="ic_mobile_info" width="96" height="96"/>
+        <image name="ic_samsungflip_logo_2" width="608" height="96"/>
+        <image name="ic_scan_qr" width="96" height="96"/>
+    </resources>
+</document>

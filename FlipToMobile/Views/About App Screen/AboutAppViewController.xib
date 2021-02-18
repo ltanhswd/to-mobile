@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutAppViewController" customModule="TestSMB" customModuleProvider="target">
+            <connections>
+                <outlet property="appNameLabel" destination="Cur-bk-LcA" id="5HC-zI-OLl"/>
+                <outlet property="appVersionLabel" destination="DIX-3l-jPM" id="sws-p1-20A"/>
+                <outlet property="logoImage" destination="tDB-2V-bKY" id="FJS-RZ-vqs"/>
+                <outlet property="opensourceButton" destination="04E-Jz-Iu8" id="ajd-ep-7lX"/>
+                <outlet property="updateButton" destination="svv-VG-vKi" id="F22-6v-Vs0"/>
+                <outlet property="versionStatusLabel" destination="rQR-EK-EhO" id="GNu-Wk-Wi8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_samsungflip_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tDB-2V-bKY">
+                    <rect key="frame" x="91.5" y="80" width="137" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="Raw-a9-ldt"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samsung Flip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cur-bk-LcA">
+                    <rect key="frame" x="13.5" y="235" width="293" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="6Pn-lS-d6j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIX-3l-jPM">
+                    <rect key="frame" x="13.5" y="265" width="293" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="ywJ-Ty-ZAo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The lastest version is already installed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQR-EK-EhO">
+                    <rect key="frame" x="13.5" y="290" width="293" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="aDo-sE-6C1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="04E-Jz-Iu8">
+                    <rect key="frame" x="89" y="486" width="142" height="22"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="EMS-gY-ITh"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Open source licenses">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="17" name="SFMono-Regular"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="openSourceTap:" destination="-1" eventType="touchUpInside" id="vg4-pl-Yk8"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svv-VG-vKi">
+                    <rect key="frame" x="76" y="331" width="168" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="T7H-hp-hka"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Update">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="updateTap:" destination="-1" eventType="touchUpInside" id="3Xu-Wz-IwD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="tDB-2V-bKY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="0WZ-9f-rx2"/>
+                <constraint firstItem="rQR-EK-EhO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="343/375" id="4R1-Bt-SlH"/>
+                <constraint firstItem="DIX-3l-jPM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="74k-Ft-zc6"/>
+                <constraint firstItem="04E-Jz-Iu8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="964-8c-3Bb"/>
+                <constraint firstItem="DIX-3l-jPM" firstAttribute="top" secondItem="Cur-bk-LcA" secondAttribute="bottom" constant="6" id="B1a-Sf-0IJ"/>
+                <constraint firstItem="tDB-2V-bKY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="B3F-4Y-qyg"/>
+                <constraint firstItem="DIX-3l-jPM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="343/375" id="E4H-d4-CTC"/>
+                <constraint firstItem="tDB-2V-bKY" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="161/375" id="E5a-Rc-eXg"/>
+                <constraint firstItem="Cur-bk-LcA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="343/375" id="MTR-YI-y2W"/>
+                <constraint firstItem="svv-VG-vKi" firstAttribute="top" secondItem="rQR-EK-EhO" secondAttribute="bottom" constant="28" id="Nwc-Hc-XBL"/>
+                <constraint firstItem="04E-Jz-Iu8" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="166/375" id="Sd8-r5-JPY"/>
+                <constraint firstItem="Cur-bk-LcA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aF3-cx-KNi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="04E-Jz-Iu8" secondAttribute="bottom" constant="60" id="ckn-vN-Ww1"/>
+                <constraint firstItem="rQR-EK-EhO" firstAttribute="top" secondItem="DIX-3l-jPM" secondAttribute="bottom" constant="2" id="gR6-by-pcN"/>
+                <constraint firstItem="rQR-EK-EhO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lw6-38-5u3"/>
+                <constraint firstItem="Cur-bk-LcA" firstAttribute="top" secondItem="tDB-2V-bKY" secondAttribute="bottom" constant="25" id="oiH-9E-Lm8"/>
+                <constraint firstItem="svv-VG-vKi" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="qTL-y1-l9c"/>
+                <constraint firstItem="svv-VG-vKi" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="197/375" id="qsJ-YG-g6x"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="151"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_samsungflip_logo" width="736" height="520"/>
+    </resources>
+</document>
